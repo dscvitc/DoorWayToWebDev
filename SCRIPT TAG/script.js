@@ -1,0 +1,1 @@
+console.log("This is loaded from script.js and not within index.html");

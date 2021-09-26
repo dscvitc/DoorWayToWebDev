@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes</title>
+
+    <script>
+        var otherVariable = "Im from first script tag";
+    </script>
+    <script>
+        var word = "GOOGLE";
+        var someNumber = 12.2;
+        let fewThings = [1, "string", true, word, ["anotherArray"], { or: "an object" }];
+
+        console.log(word, someNumber, fewThings);
+        console.log("Variable from other script tag is also accessible here:", otherVariable);
+
+        //Bonus: Facts of JavaScript
+        var dontKnowWhatToStore;
+        console.log("Whats a variable declared without value?:", dontKnowWhatToStore);
+    </script>
+
+</head>
+
+<body>
+    <h3>Please open DevTools Console.</h3>
+    <p>Use <kbd>CTRL+SHIFT+I</kbd> or <kbd>F12</kbd> to open Chrome DevTools.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+    <script>
+        //Funciton Declarations
+        function laugh() {
+            console.log("laughed🤣");
+        }
+
+        function laughWithCount(count) {
+            console.log("laughed " + count + " times😁");
+            return Math.random() * count;
+        }
+
+        laugh();
+        laughWithCount(5);
+        laughWithCount(10);
+
+        //Arrow Function Declaration
+        const laugher = () => {
+            console.log("This function initiates laugh");
+            laughWithCount("from laugher arrow function 3️⃣");
+        };
+
+        const randomReturnedLaugh = laughWithCount(7);
+        console.log("randomReturnedLaugh variable stores the returned values from laughWithoutCount function:", randomReturnedLaugh);
+
+    </script>
+
+</head>
+
+<body>
+    <h3>Please open DevTools Console.</h3>
+    <p>Use <kbd>CTRL+SHIFT+I</kbd> or <kbd>F12</kbd> to open Chrome DevTools.
+    </p>
+</body>
+
+</html>
